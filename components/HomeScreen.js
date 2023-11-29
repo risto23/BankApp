@@ -253,7 +253,8 @@ const HomeScreen = () => {
                         </View>
                     </View>
                     
-                    <View style={styles.card2}>
+                    {/* saldo */}
+                    <View style={styles.card}>
                         <View style={{ flex: 1 }}>
 
                             <View>
@@ -277,11 +278,9 @@ const HomeScreen = () => {
                         <View style={{ flex: 4, flexDirection: 'column', left: 5 }}>
                             <View style={{ flexDirection: 'row' }}>
                                 <View>
-                                    <Text style={{ fontSize: 11, color: '#000' }}>Tabungan Tandamata </Text>
+                                    <Text style={{ fontSize: 13, color: '#000' }}>Digicash </Text>
                                 </View>
-                                <View>
-                                    <Text style={{ fontSize: 11, color: '#000' }}>0021*****5100 </Text>
-                                </View>
+                                
                             </View>
                             <View style={{ flexDirection: 'row', marginTop: 3 }}>
                                 <View>
@@ -300,7 +299,7 @@ const HomeScreen = () => {
                                     </Image>
                                 </View>
                                 <View style={{ left: 25 }}>
-                                    <Text style={{ fontSize: 15, color: '#000', left: 0 }}>IDR 13,373,000 </Text>
+                                    <Text style={{ fontSize: 15, color: '#000', left: 0 }}>IDR 3,373,000 </Text>
                                 </View>
                             </View>
 
@@ -323,7 +322,15 @@ const HomeScreen = () => {
 
                         </View>
                     </View>
+
+                   
                     
+                </View>
+
+                <View style={{ marginTop:40 }}>
+                    <View style={{  }}>
+                        <Text>jnfdoivdoifvnodin</Text>
+                    </View>
                 </View>
                 
             </ScrollView>
