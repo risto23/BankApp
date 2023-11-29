@@ -590,6 +590,7 @@ export default StyleSheet.create({
     },
     navigation: {
         top: 797,
+        flex:1,
         height: 119,
         left: 0,
         position: "absolute",
@@ -609,4 +610,55 @@ export default StyleSheet.create({
         overflow: "hidden",
         width: 390,
     },
+    backgroundImage: {
+        flex: 1,
+        resizeMode: 'cover', // or 'stretch' or 'contain'
+        justifyContent: 'center',
+    },
+    card: {
+        backgroundColor: "#fff",
+        // borderWidth:1,
+        borderRadius: 10,
+        borderEndEndRadius: 10,
+        marginTop: 10,
+        marginLeft: 20,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 8.00,
+        elevation: 10,
+        marginRight: 20,
+        // marginBottom: 10,
+        // paddingTop: 10,
+        // paddingBottom: 10,
+        height:50,
+        flex:1,
+        flexDirection:'row'
+    },
+    card2: {
+        backgroundColor: "#fff",
+        // borderWidth:1,
+        borderRadius: 10,
+        borderEndEndRadius: 10,
+        marginTop: 10,
+        marginLeft: 20,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 8.00,
+        elevation: 10,
+        marginRight: 20,
+        // marginBottom: 10,
+        // paddingTop: 10,
+        // paddingBottom: 10,
+        height: 80,
+        flex: 1,
+        flexDirection: 'row'
+    }
 })
