@@ -1,13 +1,17 @@
 import * as React from "react";
-import { Text, StyleSheet, Image, View, ScrollView, ImageBackground } from "react-native";
+import { Text, StyleSheet, Image, View, ScrollView, ImageBackground, Dimensions } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 import { Border, Color, FontFamily, FontSize } from "../GlobalStyles";
 import styles from "../css/CSS_All"
 import { Card } from '@rneui/themed';
+import { ImageSlider } from "react-native-image-slider-banner";
 
 const HomeScreen = () => {
+    const dimensions = Dimensions.get('window');
+    const imageHeight = Math.round(dimensions.width * 1 / 2);
+    const imageWidth = dimensions.width;
     return (
-        <View>
+        <View style={styles.container}>
             <ScrollView>
                 <View style={{
                     height: 201,
@@ -327,13 +331,398 @@ const HomeScreen = () => {
                     
                 </View>
 
-                <View style={{ marginTop:40 }}>
-                    <View style={{  }}>
-                        <Text>jnfdoivdoifvnodin</Text>
+                <View style={{ marginTop:50 }}>
+                    <View style={{ flexDirection:'column' }}>
+                        <View style={{flexDirection:'row',flex:1,height:120,marginRight:20}}>
+                            <View style={{flex:1,flexDirection:'column'}}>
+                                <View style={{ flex: 1 ,}}>
+                                    <Image
+                                        style={{
+                                            width: 89,
+                                            height: 92,
+                                            left: 10,
+                                            top: 0,
+                                            position: "absolute",
+                                            shadowColor: "#BDD5EB",
+                                            shadowOffset: {
+                                                width: 0,
+                                                height: 2,
+                                            },
+                                            shadowOpacity: 0.8,
+                                            shadowRadius: 2,
+                                            elevation: 5,
+
+                                        }}
+                                        resizeMode='cover'
+                                        source={require('../assets/finance.png')}
+                                    >
+                                    </Image>
+                                </View>
+                                <View style={{flex:2,left:30, top: 45}}>
+                                    <Text style={{ color:'#134B70'}}>Finance</Text>
+                                </View>
+                                
+                            </View>
+
+                            <View style={{ flex: 1, flexDirection: 'column' }}>
+                                <View style={{ flex: 1 }}>
+                                    <Image
+                                        style={{
+                                            width: 89,
+                                            height: 92,
+                                            left: 10,
+                                            top: 0,
+                                            position: "absolute",
+                                            shadowColor: "#CDEBE0",
+                                            shadowOffset: {
+                                                width: 0,
+                                                height: 2,
+                                            },
+                                            shadowOpacity: 1,
+                                            shadowRadius: 2,
+                                            elevation: 5,
+
+                                        }}
+                                        resizeMode='cover'
+                                        source={require('../assets/kirim.png')}
+                                    >
+                                    </Image>
+                                </View>
+                                <View style={{ flex: 2, left: 30, top: 45 }}>
+                                    <Text style={{ color: '#134B70' }}>Transfer</Text>
+                                </View>
+
+                            </View>
+
+                            <View style={{ flex: 1, flexDirection: 'column' }}>
+                                <View style={{ flex: 1 }}>
+                                    <Image
+                                        style={{
+                                            width: 89,
+                                            height: 92,
+                                            left: 10,
+                                            top: 0,
+                                            position: "absolute",
+                                            shadowColor: "#CDEBE0",
+                                            shadowOffset: {
+                                                width: 0,
+                                                height: 2,
+                                            },
+                                            shadowOpacity: 1,
+                                            shadowRadius: 2,
+                                            elevation: 5,
+
+                                        }}
+                                        resizeMode='cover'
+                                        source={require('../assets/bill.png')}
+                                    >
+                                    </Image>
+                                </View>
+                                <View style={{ flex: 2, left: 45, top: 45 }}>
+                                    <Text style={{ color: '#134B70' }}>Bill</Text>
+                                </View>
+
+                            </View>
+
+                            <View style={{ flex: 1, flexDirection: 'column' }}>
+                                <View style={{ flex: 1 }}>
+                                    <Image
+                                        style={{
+                                            width: 89,
+                                            height: 92,
+                                            left: 10,
+                                            top: 0,
+                                            position: "absolute",
+                                            shadowColor: "#CDEBE0",
+                                            shadowOffset: {
+                                                width: 0,
+                                                height: 2,
+                                            },
+                                            shadowOpacity: 1,
+                                            shadowRadius: 2,
+                                            elevation: 5,
+
+                                        }}
+                                        resizeMode='cover'
+                                        source={require('../assets/payment.png')}
+                                    >
+                                    </Image>
+                                </View>
+                                <View style={{ flex: 2, left: 30, top: 45 }}>
+                                    <Text style={{ color: '#134B70' }}>Payment</Text>
+                                </View>
+
+                            </View>
+                        </View>
+
+                        <View style={{ flexDirection: 'row', flex: 1, height: 120, marginRight:20 }}>
+                            <View style={{ flex: 1, flexDirection: 'column' }}>
+                                <View style={{ flex: 1 }}>
+                                    <Image
+                                        style={{
+                                            width: 89,
+                                            height: 92,
+                                            left: 10,
+                                            top: 0,
+                                            position: "absolute",
+                                            shadowColor: "#BDD5EB",
+                                            shadowOffset: {
+                                                width: 0,
+                                                height: 2,
+                                            },
+                                            shadowOpacity: 0.8,
+                                            shadowRadius: 2,
+                                            elevation: 5,
+
+                                        }}
+                                        resizeMode='cover'
+                                        source={require('../assets/nocard.png')}
+                                    >
+                                    </Image>
+                                </View>
+                                <View style={{ flex: 2, left: 30, top: 45 }}>
+                                    <Text style={{ color: '#134B70' }}>Cardless</Text>
+                                </View>
+
+                            </View>
+
+                            <View style={{ flex: 1, flexDirection: 'column' }}>
+                                <View style={{ flex: 1 }}>
+                                    <Image
+                                        style={{
+                                            width: 89,
+                                            height: 92,
+                                            left: 10,
+                                            top: 0,
+                                            position: "absolute",
+                                            shadowColor: "#CDEBE0",
+                                            shadowOffset: {
+                                                width: 0,
+                                                height: 2,
+                                            },
+                                            shadowOpacity: 1,
+                                            shadowRadius: 2,
+                                            elevation: 5,
+
+                                        }}
+                                        resizeMode='cover'
+                                        source={require('../assets/open_account.png')}
+                                    >
+                                    </Image>
+                                </View>
+                                <View style={{ flex: 2, left: 12, top: 45 }}>
+                                    <Text style={{ color: '#134B70' }}>Open Account</Text>
+                                </View>
+
+                            </View>
+
+                            <View style={{ flex: 1, flexDirection: 'column' }}>
+                                <View style={{ flex: 1 }}>
+                                    <Image
+                                        style={{
+                                            width: 89,
+                                            height: 92,
+                                            left: 10,
+                                            top: 0,
+                                            position: "absolute",
+                                            shadowColor: "#CDEBE0",
+                                            shadowOffset: {
+                                                width: 0,
+                                                height: 2,
+                                            },
+                                            shadowOpacity: 1,
+                                            shadowRadius: 2,
+                                            elevation: 5,
+
+                                        }}
+                                        resizeMode='cover'
+                                        source={require('../assets/depo.png')}
+                                    >
+                                    </Image>
+                                </View>
+                                <View style={{ flex: 2, left: 18, top: 45 }}>
+                                    <Text style={{ color: '#134B70' }}>Bjb Deposito</Text>
+                                </View>
+
+                            </View>
+
+                            <View style={{ flex: 1, flexDirection: 'column' }}>
+                                <View style={{ flex: 1 }}>
+                                    <Image
+                                        style={{
+                                            width: 89,
+                                            height: 92,
+                                            left: 10,
+                                            top: 0,
+                                            position: "absolute",
+                                            shadowColor: "#CDEBE0",
+                                            shadowOffset: {
+                                                width: 0,
+                                                height: 2,
+                                            },
+                                            shadowOpacity: 1,
+                                            shadowRadius: 2,
+                                            elevation: 5,
+
+                                        }}
+                                        resizeMode='cover'
+                                        source={require('../assets/lagi.png')}
+                                    >
+                                    </Image>
+                                </View>
+                                
+
+                            </View>
+                        </View>
                     </View>
+                </View>
+
+                {/* image slide */}
+                <View style={{ }}>
+                    <ImageSlider
+                        data={[
+                            
+                            { img: require('../assets/bg-head.png') },
+                            { img: require('../assets/banner_1.png') },
+                            { img: require('../assets/banner_3.png') },
+                            
+                        ]}
+                        localImg
+                        showIndicator
+                        caroselImageStyle={{ resizeMode: 'contain', width: imageWidth }}
+                        autoPlay={false}
+                        // onItemChanged={(item) => console.log("item", item)}
+                        closeIconColor="#fff"
+                    />
                 </View>
                 
             </ScrollView>
+
+            <View style={{height:70, backgroundColor:'#fff'}}>
+                <View style={{flexDirection:'row'}}>
+                    <View style={{flex:1,flexDirection:'column'}}>
+                        <View style={{flex:1}}>
+                            <Image
+                                style={{
+                                    width: 35,
+                                    height: 33,
+                                    left: 20,
+                                    top: 10,
+                                    position: "absolute",
+
+                                }}
+                                resizeMode='contain'
+                                source={require('../assets/mailoutline.png')}
+                            >
+                            </Image>
+                        </View>
+
+                        <View style={{ top:45,left:25}}>
+                            <Text style={{ color:'#67757B',fontSize:11}}>Inbox</Text>
+                        </View>
+                        
+                    </View>
+
+                    <View style={{ flex: 1, flexDirection: 'column' }}>
+                        <View style={{ flex: 1 }}>
+                            <Image
+                                style={{
+                                    width: 35,
+                                    height: 33,
+                                    left: 20,
+                                    top: 10,
+                                    position: "absolute",
+
+                                }}
+                                resizeMode='contain'
+                                source={require('../assets/feather-heart.png')}
+                            >
+                            </Image>
+                        </View>
+
+                        <View style={{ top: 45, left: 20 }}>
+                            <Text style={{ color: '#67757B', fontSize: 11 }}>Favorite</Text>
+                        </View>
+
+                    </View>
+
+                    <View style={{ flex: 1, flexDirection: 'column' }}>
+                        <View style={{ flex: 1 }}>
+                            <Image
+                                style={{
+                                    width: 81,
+                                    height: 81,
+                                    left: 0,
+                                    top: -40,
+                                    position: "absolute",
+                                    shadowColor: "#000",
+                                    shadowOffset: {
+                                        width: 0,
+                                        height: 10,
+                                    },
+                                    shadowOpacity: 0.8,
+                                    shadowRadius: 10,
+                                    elevation: 20,
+
+                                }}
+                                resizeMode='contain'
+                                source={require('../assets/qeris.png')}
+                            >
+                            </Image>
+                        </View>
+
+                       
+
+                    </View>
+
+                    <View style={{ flex: 1, flexDirection: 'column' }}>
+                        <View style={{ flex: 1 }}>
+                            <Image
+                                style={{
+                                    width: 35,
+                                    height: 33,
+                                    left: 20,
+                                    top: 10,
+                                    position: "absolute",
+
+                                }}
+                                resizeMode='contain'
+                                source={require('../assets/feather-settings.png')}
+                            >
+                            </Image>
+                        </View>
+
+                        <View style={{ top: 45, left: 25 }}>
+                            <Text style={{ color: '#67757B', fontSize: 11 }}>Setting</Text>
+                        </View>
+
+                    </View>
+
+                    <View style={{ flex: 1, flexDirection: 'column' }}>
+                        <View style={{ flex: 1 }}>
+                            <Image
+                                style={{
+                                    width: 35,
+                                    height: 33,
+                                    left: 20,
+                                    top: 10,
+                                    position: "absolute",
+
+                                }}
+                                resizeMode='contain'
+                                source={require('../assets/feather-log-out.png')}
+                            >
+                            </Image>
+                        </View>
+
+                        <View style={{ top: 45, left: 25 }}>
+                            <Text style={{ color: '#67757B', fontSize: 11 }}>Log Out</Text>
+                        </View>
+
+                    </View>
+                    
+                </View>
+            </View>
 
         </View>
 

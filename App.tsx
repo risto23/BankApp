@@ -2,7 +2,6 @@ const Stack = createNativeStackNavigator();
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 
-import HomeAlternative2 from "./components/HomeAlternative2";
 import HomeScreen from "./components/HomeScreen";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -20,7 +19,6 @@ const App = () => {
             initialRouteName="HomeScreen"
           >
 
-            <Stack.Screen name="HomeAlternative2" component={HomeAlternative2} />
             <Stack.Screen name="HomeScreen" component={HomeScreen} />
           </Stack.Navigator>
         ) : null}
